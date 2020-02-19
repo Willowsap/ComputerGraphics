@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--Test all white image using a single sphere.-->
+<scene>
+  <camera>
+    <viewPoint>1.001 1.001 1.001</viewPoint>
+    <viewDir>-1 -1 -1 </viewDir>
+    <projNormal>1 1 1</projNormal>
+    <viewUp>0 1 0</viewUp>
+    <projDistance>1</projDistance>
+    <viewWidth>1</viewWidth>
+    <viewHeight>1</viewHeight>
+  </camera>
+  <image>
+    300 300
+  </image>
+  <shader name="normal" type="Normal" />
+  <surface type="Plane">
+    <shader ref="normal" />
+    <point>0 0 0</point>
+    <normal>1 0 0</normal>
+  </surface>
+  <surface type="Plane">
+    <shader ref="normal" />
+    <point>0 0 0</point>
+    <normal>0 1 0</normal>
+  </surface>
+  <surface type="Plane">
+    <shader ref="normal" />
+    <point>0 0 0</point>
+    <normal>0 0 1</normal>
+  </surface>
+  <light>
+    <position>2 2 2</position>
+    <intensity>1 1 1</intensity>
+  </light>
+</scene>

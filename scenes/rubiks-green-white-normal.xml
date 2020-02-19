@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<scene>
+  <camera>
+    <viewPoint>0 0 0</viewPoint>
+    <projDistance>1</projDistance>
+    <viewWidth>2</viewWidth>
+    <viewHeight>2</viewHeight>
+    <viewDir>-1 1 0</viewDir>
+    <projNormal>1 -1 0</projNormal>
+    <viewUp>0 1 0</viewUp>
+  </camera>
+  <image>200 200</image>
+  <light>
+    <position>0 0 0</position>
+    <intensity>1 1 1</intensity>
+  </light>
+  <shader name="green" type="Normal"/>
+  <surface type="Plane">
+    <shader ref="green"/>
+    <point>-1 0 0</point>
+    <normal>1 0 0</normal>
+  </surface>
+  <shader name="white" type="Normal"/>
+  <surface type="Plane">
+    <shader ref="white"/>
+    <point>0 1 0</point>
+    <normal>0 -1 0</normal>
+  </surface>
+</scene>
